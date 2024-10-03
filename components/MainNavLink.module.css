@@ -1,0 +1,259 @@
+body {
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background-color: #f0f4f8;
+   color: #333;
+   margin: 0;
+   padding: 0;
+}
+
+.header {
+   padding: 1rem;
+   background: linear-gradient(135deg, #3399ff, #66ccff);
+   color: #ffffff;
+   text-align: center;
+   font-size: 1.5rem;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   border-bottom: 2px solid #66ccff;
+}
+
+.nav {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #66ccff;
+   padding: 1rem 0;
+   border-bottom: 1px solid #3399ff;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav a {
+   margin: 0 1.5rem;
+   text-decoration: none;
+   color: #ffffff;
+   font-size: 1.2rem;
+   transition: color 0.3s ease, transform 0.3s ease;
+   padding: 0.5rem 1rem;
+   border-radius: 5px;
+}
+
+.nav a:hover,
+.nav a.active {
+   color: #ffff99;
+   background-color: #3399ff;
+   transform: translateY(-2px);
+}
+
+.container {
+   max-width: 1200px;
+   margin: 2rem auto;
+   padding: 0 1rem;
+}
+
+h1, h2 {
+   color: #333;
+}
+
+iframe {
+   border: none;
+   width: 100%;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   margin: 2rem 0;
+}
+
+.grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+   gap: 20px;
+   list-style: none;
+   padding: 0;
+}
+
+.item {
+   background-color: #ffffff;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   border-radius: 10px;
+   overflow: hidden;
+   transition: transform 0.3s ease;
+   text-align: center;
+   display: flex;
+   flex-direction: column; 
+   padding: 10px;
+}
+
+.item:hover {
+   transform: translateY(-10px);
+}
+
+.imageWrapper {
+   width: 100%;
+   height: 150px;
+   position: relative;
+   overflow: hidden;
+   flex-shrink: 0;
+   margin-bottom: 10px; 
+}
+
+.imageWrapper2 {
+   width: 100%;
+   height: 400px;
+   position: relative;
+   overflow: hidden;
+   flex-shrink: 0;
+   margin-bottom: 10px; 
+}
+
+.imageWrapper3 {
+   width: 100%;
+   height: 450px;
+   position: relative;
+   overflow: hidden;
+   flex-shrink: 0;
+   margin-bottom: 10px; 
+}
+
+.image {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 10px;
+}
+
+.info {
+   padding: 1rem;
+   flex-grow: 1; 
+}
+
+.info a {
+   color: #3399ff;
+   text-decoration: none;
+   font-weight: bold;
+}
+
+.info a:hover {
+   text-decoration: underline;
+}
+
+h2 {
+   height: 90px; 
+   line-height: 1.5;
+   text-overflow: ellipsis; 
+}
+
+.error {
+   color: red;
+   font-weight: bold;
+   text-align: center;
+   margin-top: 1rem;
+}
+
+.list {
+   list-style: none;
+   display: flex;
+   justify-content: center; 
+   padding: 0;
+   margin: 0;
+}
+
+.list li {
+   margin: 0 2rem;
+}
+
+.list a {
+   text-decoration: none;
+   color: #333;
+   font-size: 1.2rem;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+   transition: color 0.3s ease;
+   padding: 0.5rem 1rem;
+   border-radius: 5px;
+}
+
+.list a:hover,
+.list a.active {
+   color: #ffffff;
+   background-color: #3399ff;
+   text-decoration: underline; 
+}
+
+.list {
+   list-style-type: none;
+   padding: 0;
+}
+
+section {
+   background-color: #ffffff;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   padding: 2rem;
+   margin: 2rem 0;
+}
+
+section h3 {
+   color: #3399ff;
+   font-size: 1.8rem;
+   margin-bottom: 0.5rem;
+   border-bottom: 2px solid #66ccff;
+   padding-bottom: 0.5rem;
+}
+
+section p {
+   font-size: 1.2rem;
+   line-height: 1.6;
+   margin-bottom: 1.5rem;
+   color: #666;
+   padding-left: 1rem;
+   border-left: 4px solid #66ccff;
+}
+.filterInput {
+   width: 100%;
+   padding: 15px 20px;
+   margin: 20px 0;
+   box-sizing: border-box;
+   border: 2px solid #ddd;
+   border-radius: 25px;
+   font-size: 18px;
+   transition: all 0.3s ease-in-out;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.filterInput:focus {
+   border-color: #5d9cec;
+   box-shadow: 0 0 10px rgba(93, 156, 236, 0.5);
+   outline: none;
+}
+.largeTitle {
+   font-size: 3em; /* 調整字體大小 */
+   font-weight: bold;
+   text-align: center;
+   margin: 20px 0;
+}
+/* Charts.css */
+h1 {
+   text-align: center;
+   font-size: 32px;
+   margin-bottom: 20px;
+   color: #007ACC;
+}
+
+p {
+   text-align: center;
+   font-size: 16px;
+   color: #555;
+}
+
+.chart-container {
+   display: flex;
+   justify-content: space-around;
+   margin-bottom: 40px;
+}
+
+.chart-wrapper {
+   height: 400px;
+   width: 45%;
+   transition: transform 0.3s ease;
+}
+
+.chart-wrapper:hover {
+   transform: scale(1.05);
+}
